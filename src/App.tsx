@@ -1,11 +1,11 @@
 import './assets/styles/custom.scss';
 import './App.css';
-import Routes from 'Routes';
+import MyRoutes from 'myRoutes';
 
 const App = () => {
   return (
     <div className="App">
-      <Routes />
+      <MyRoutes />
     </div>
   );
 }
