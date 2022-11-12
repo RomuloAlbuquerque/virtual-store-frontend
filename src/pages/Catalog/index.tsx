@@ -6,7 +6,6 @@ import Pagination from 'components/Pagination';
 import ProductCard from 'components/ProductCard';
 import { SpringPage } from 'types/vendor/spring';
 import { Product } from 'types/product';
-import { AxiosParams } from 'types/vendor/axios';
 import { BASE_URL } from 'util/requests';
 import LoaderCatalog from './LoaderCatalog';
 
@@ -16,18 +15,8 @@ const Catalog = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    // const params: AxiosParams = {
-    //   method: 'GET',
-    //   url: `${BASE_URL}/products`,
-    //   params: {
-    //     page: 0,
-    //     size: 12,
-    //   },
-    // };
-
     setIsLoading(true);
 
-    //acrescentado//////////////////////////////////////////
     axios({
       method: 'GET',
       url: `${BASE_URL}/products`,
@@ -41,15 +30,8 @@ const Catalog = () => {
     })
       .then((response) => {
         setPage(response.data);
-      }).finally(() => setIsLoading(false));
-//////////////////////////////////////////////////////////////
-
-
-      // axios(params)
-      //   .then((response) => {
-      //     setPage(response.data);
-      //   })
-      //.finally(() => setIsLoading(false));
+      })
+      .finally(() => setIsLoading(false));
   }, []);
 
   return (
