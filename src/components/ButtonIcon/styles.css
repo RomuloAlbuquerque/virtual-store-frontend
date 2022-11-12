@@ -1,0 +1,56 @@
+.btn-icon{
+    width: 250px;
+    height: 50px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.btn-icon:hover{
+    color: white;
+}
+
+.content-text{
+    text-align: center; 
+    width: 90%;
+    height: 50px;
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-text h6{
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.arrow{
+    height: 50px;
+    width: 50px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(38, 50, 56, 0.5)
+}
+
+@media (min-width: 576px){
+    .btn-icon{
+        width: 350px;
+        height: 70px;
+    }
+
+    .arrow{
+        height: 70px;
+        width: 70px;
+    }
+    .content-text h6{
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+}

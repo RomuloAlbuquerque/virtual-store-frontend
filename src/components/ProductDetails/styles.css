@@ -1,0 +1,133 @@
+.product-details-container {
+  padding: 10px;
+}
+
+.product-details-card {
+  padding: 15px 5px;
+}
+
+.goback-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0px 10px 20px;
+  text-transform: uppercase;
+  color: #263238;
+}
+
+.goback-container svg {
+  transform: rotate(-180deg);
+  color: #407bff;
+  margin: 5px;
+  height: 15px;
+}
+
+.img-container {
+  margin: 0px 10px;
+  padding: 20px;
+  text-align: center;
+  border: 3px solid #e1e1e1;
+  border-radius: 20px;
+}
+
+.img-container img {
+  width: 100%;
+}
+
+.name-price-container {
+  padding: 10px;
+  margin: 0px 10px;
+}
+
+.description-container {
+  padding: 10px;
+  margin: 10px;
+  color: #9e9e9e;
+  border: 3px solid #e1e1e1;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.description-container h2 {
+  font-size: 16px;
+  letter-spacing: -0.015em;
+  margin-bottom: 20px;
+}
+
+.description-container p {
+  font-size: 14px;
+  letter-spacing: -0.015em;
+  text-align: justify;
+}
+
+@media (min-width: 576px) {
+  .product-details-container {
+    padding: 20px;
+  }
+
+  .product-details-card {
+    padding: 20px;
+  }
+
+  .goback-container h6 {
+    font-size: 20px;
+  }
+
+  .description-container p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .img-container img {
+    width: 70%;
+  }
+  .description-container p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 992px) {
+  .img-container img {
+    width: 50%;
+  }
+  .description-container {
+    padding: 80px;
+  }
+  .description-container h2 {
+    font-size: 24px;
+  }
+  .description-container p {
+    font-size: 22px;
+  }
+  .name-price-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1200px) {
+  .name-price-container {
+    display: block;
+  }
+  .description-container {
+    height: 450px;
+    margin-top: 0px;
+  }
+  .img-container{
+    height: 450px;
+    margin-top: 0px;
+  }
+  .img-container img {
+    width: 70%;
+  }
+  .description-container {
+    padding: 50px;
+  }
+  .description-container h2 {
+    font-size: 20px;
+  }
+  .description-container p {
+    font-size: 18px;
+  }
+}

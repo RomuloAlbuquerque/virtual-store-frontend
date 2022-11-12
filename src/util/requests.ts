@@ -1,0 +1,1 @@
+export const BASE_URL = process.env.REACT_APP_BACKEND_URL ?? 'https://c552-2804-2468-a880-e024-8df8-b922-682d-1aba.sa.ngrok.io';
